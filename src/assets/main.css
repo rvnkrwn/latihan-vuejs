@@ -1,0 +1,97 @@
+/* Fonts Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    /* font-family: 'Silkscreen', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    /* font-family: 'Poppins', sans-serif; */
+
+* {
+    padding: 0;
+    color: white;
+    margin: 0;
+}
+.active {
+    color: rgb(0, 211, 0) !important;
+    font-size: 14px;
+}
+body {
+    background: #222;
+}
+
+header {
+    background: #111;
+    color: white;
+    padding: 10px;
+}
+header .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+header .wrapper h1 {
+    align-self: center;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Silkscreen', cursive;
+}
+header .wrapper h1::before {
+    content: "</> ";
+}
+header .wrapper nav {
+    align-self: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+}
+header .wrapper nav a {
+    color: white;
+    text-decoration: none;
+    margin: auto 10px;
+}
+
+main {
+    padding: 30px;
+}
+
+main .zero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 280px;
+}
+main .zero h1 {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px auto;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+}
+main .zero h1::first-letter {
+    font-size: 50px;
+    color: rgb(0, 250, 4);
+    text-shadow: 0 2px 10px rgb(24, 159, 7);
+}
+main .zero .intro {
+    padding: 5px;
+    box-shadow: 0 0 5px rgb(0, 225, 255);
+    background: rgb(31, 69, 74);
+}
+main .zero .intro code {
+    font-size: 16px;
+    line-height: 2;
+    padding: 5px;
+}
+main .zero .intro code::before {
+    content: "<>";
+    margin: 0;
+    color: rgb(0, 255, 0);
+}
+main .zero .intro code::after {
+    content: "</>";
+    margin: 0;
+    color: rgb(0, 255, 0);
+}
+main .zero .intro code .textIntro {
+    padding: 5px 20px;
+    line-height: 1.5;
+    max-width: 300px;
+}
